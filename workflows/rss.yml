@@ -3,11 +3,14 @@ on:
     url:
       - https://moonvy.com/blog/rss.xml
       - https://bjango.com/rss/articles.xml
+
 jobs:
   request:
     name: Make a HTTP Request
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
@@ -15,8 +18,8 @@ jobs:
           method: POST
           body: |
             {
-              "type":"url",
-              "content":"${{ on.rss.outputs.link }}", 
-              "title": "${{ on.rss.outputs.title }}",
-              "folder":"收集箱"
+              "type": "url",
+              "content": "${{ steps.trigger.outputs.link }}", 
+              "title": "${{ steps.trigger.outputs.title }}",
+              "folder": "收集箱"
             }
