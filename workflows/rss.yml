@@ -1,8 +1,8 @@
 on:
   rss:
     url:
-      - RSS https://moonvy.com/blog/rss.xml
-      - RSS https://bjango.com/rss/articles.xml
+      - https://moonvy.com/blog/rss.xml
+      - https://bjango.com/rss/articles.xml
 jobs:
   request:
     name: Make a HTTP Request
