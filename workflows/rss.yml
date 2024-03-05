@@ -9,9 +9,7 @@ jobs:
     name: Make a HTTP Request
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Make a HTTP Request
+      - name: Make a HTTP Request      
         uses: actionsflow/axios@v1
         with:
           url: https://cubox.pro/c/api/save/a1LqftpwuOt
