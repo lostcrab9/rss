@@ -3,7 +3,7 @@ on:
     url:
       - https://moonvy.com/blog/rss.xml
       - https://bjango.com/rss/articles.xml
-
+      - https://anotherdayu.com/feed/
 jobs:
   request:
     name: Make a HTTP Request
