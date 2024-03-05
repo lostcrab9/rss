@@ -19,7 +19,7 @@ jobs:
           body: |
             {
               "type": "url",
-              "content": "${{ steps.trigger.outputs.link }}", 
-              "title": "${{ steps.trigger.outputs.title }}",
+              "content": "${{ on.rss.outputs.link }}", 
+              "title": "${{ on.rss.outputs.title }}",
               "folder": "收集箱"
             }
