@@ -4,6 +4,7 @@ on:
       - https://moonvy.com/blog/rss.xml
       - https://bjango.com/rss/articles.xml
       - https://anotherdayu.com/feed/
+      - https://feeds.feedburner.com/brad-frosts-blog
 jobs:
   request:
     name: Make a HTTP Request
