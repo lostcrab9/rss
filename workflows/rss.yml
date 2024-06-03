@@ -5,6 +5,7 @@ on:
       - https://bjango.com/rss/articles.xml
       - https://anotherdayu.com/feed/
       - https://feeds.feedburner.com/brad-frosts-blog
+      - https://chasem.co/feed.xml
 jobs:
   request:
     name: Make a HTTP Request
